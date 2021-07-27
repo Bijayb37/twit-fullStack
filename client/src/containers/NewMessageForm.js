@@ -34,7 +34,7 @@ function NewMessageForm(props) {
                     <label htmlFor="newmessage" className="form-label">New Message &nbsp;</label>
                     <textarea onChange={handleChange} value={value} className="form-control" id="newmessage" rows="3"></textarea>
                 </div>
-                <button className="btn btn-success">Create New Message</button>
+                <button type="submit" className="btn btn-success">Create New Message</button>
             </form>
         </div>
     )

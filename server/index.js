@@ -6,7 +6,6 @@ const {Message} = require("./models")
 const authRoutes = require("./routes/auth")
 const messageRoutes = require("./routes/messages")
 const {loginRequired, ensureCorrectUser} = require("./middleware/auth")
-
 const PORT = process.env.PORT || 3002
 
 app.use(express.json()) 
