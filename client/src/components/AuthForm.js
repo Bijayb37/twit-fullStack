@@ -30,7 +30,7 @@ export default function AuthForm(props) {
                 history.push("/")
             })
             .catch((err) => {
-                return
+                return 
             })
     }
     //on route changes remove errors

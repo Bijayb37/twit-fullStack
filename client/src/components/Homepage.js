@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import MessageTimeline from "./MessageTimeline"
 
 const Homepage = props => {
@@ -9,7 +8,6 @@ const Homepage = props => {
         return (
             <div className="home-hero">
                 <h1>Whats new in the world</h1>
-                <Link to="/signup" className="btn btn-primary">Sign Up</Link>
             </div>
         )
     }
