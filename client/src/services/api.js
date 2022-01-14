@@ -12,7 +12,7 @@ export function setTokenHeader(token) {
 //apiCall function, that returns promises to make all apiCalls easier
 export function apiCall(method, path, data) {
     return new Promise((resolve, reject) => {
-        return axios[method](`https://twit-server.herokuapp.com/api${path}`, data)
+        return axios[method](path, data)
             .then(res => {
                 return resolve(res.data)
             })
