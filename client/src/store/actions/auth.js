@@ -14,7 +14,7 @@ export function setAuthorizationToken(token) {
 }
 
 export function pingServer() {
-    return apiCall("get", "/api/ping")
+    return apiCall("get", "api/ping")
         .then(res => {})
         .catch(err => console.log(err.message))
 }
