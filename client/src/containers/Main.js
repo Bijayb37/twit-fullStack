@@ -11,7 +11,7 @@ const Main = props => {
     const { authUser, errors, removeError, currentUser } = props
 
     useEffect(() => {
-        // pingServer()
+        pingServer()
     }, [])
     console.log(currentUser.user)
     return (
