@@ -13,7 +13,7 @@ const Main = props => {
     useEffect(() => {
         pingServer()
     }, [])
-
+    console.log(currentUser.user)
     return (
         <div className="container">
             <Switch>
@@ -21,6 +21,7 @@ const Main = props => {
                     render={props =>
                         <Homepage
                             currentUser={currentUser}
+                            authUser={authUser}
                             {...props}
                         />}
                 />

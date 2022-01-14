@@ -18,7 +18,7 @@ const MessageItem = (props) => {
         likes,
         edit
     } = props
-
+    console.log(userId)
     const [editing, toggle] = Toggler(false)
     const [hover, hoverToggle] = Toggler(false)
     const [newText, setNewText] = useState(text)
