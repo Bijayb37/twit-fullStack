@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api",
+      "destination": "https://twit-server.herokuapp.com/api"
+    }
+  ]
+}

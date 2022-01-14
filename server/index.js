@@ -42,5 +42,5 @@ app.use((req, res, next) => {
 app.use(errorHandler)
 
 app.listen(PORT, () => {
-    console.log("connection open on port 3000")
+    console.log(`connection open on port ${PORT}`)
 })
