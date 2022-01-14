@@ -9,7 +9,7 @@ import NewMessageForm from './NewMessageForm'
 //all routes for react router
 const Main = props => {
     const { authUser, errors, removeError, currentUser } = props
-
+  console.log("whac")
     useEffect(() => {
         pingServer()
     }, [])
