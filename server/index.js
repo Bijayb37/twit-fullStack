@@ -1,6 +1,7 @@
 require("dotenv").config()
 const express = require('express')
 const app = express()
+const cors = require("cors")
 const errorHandler = require('./handlers/error')
 const {Message} = require("./models")
 const authRoutes = require("./routes/auth")
@@ -8,6 +9,7 @@ const messageRoutes = require("./routes/messages")
 const {loginRequired, ensureCorrectUser} = require("./middleware/auth")
 const PORT = process.env.PORT || 3002
 
+app.use(cors())
 app.use(express.json()) 
 app.use(express.urlencoded({ extended: true })) 
 //routes and middleware
