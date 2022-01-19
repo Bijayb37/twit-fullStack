@@ -7,7 +7,7 @@ const {Message} = require("./models")
 const authRoutes = require("./routes/auth")
 const messageRoutes = require("./routes/messages")
 const {loginRequired, ensureCorrectUser} = require("./middleware/auth")
-const PORT = process.env.PORT || 3002
+const PORT = process.env.PORT || 3001
 
 app.use(cors())
 app.use(express.json()) 
@@ -44,5 +44,5 @@ app.use((req, res, next) => {
 app.use(errorHandler)
 
 app.listen(PORT, () => {
-    console.log("connection open on port 3000")
+    console.log(`connection open on port ${PORT}`)
 })
